@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Learnova — The Student Universe. Learn with Nova AI, study rooms, practice and revision.">
+  <title>learnova. — The Student Universe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="app" id="app">
+    <header class="topbar">
+      <a class="brand" href="#" data-page="home" aria-label="Learnova home">
+        <span class="brand-mark">L</span><span>learnova<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <button class="nav-link active" data-page="home">Home</button>
+        <button class="nav-link" data-page="study">Study Room</button>
+        <button class="nav-link" data-page="nova">Nova AI</button>
+        <button class="nav-link" data-page="about">About</button>
+      </nav>
+      <div class="top-actions">
+        <button class="theme-toggle icon-button" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">◐</button>
+        <button class="button button-quiet" data-page="login">Log in</button>
+        <button class="button button-primary" data-page="onboarding">Get started <span>↗</span></button>
+      </div>
+      <button class="mobile-menu icon-button" id="mobileMenu" aria-label="Open menu">☰</button>
+    </header>
+
+    <main>
+      <section class="page active" id="page-home">
+        <div class="hero-wrap">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> THE STUDENT UNIVERSE</div>
+            <h1>Think bigger.<br><span>Learn better.</span></h1>
+            <p class="hero-description">A smarter space to understand every concept, build strong habits and move forward with confidence — at your own pace.</p>
+            <div class="hero-actions">
+              <button class="button button-primary button-large" data-page="onboarding">Start learning <span>↗</span></button>
+              <button class="button button-outline button-large" data-page="study">Explore study room</button>
+            </div>
+            <div class="hero-proof"><span class="proof-icon">✦</span><span>One learning space. Endless possibilities.</span></div>
+          </div>
+          <div class="hero-visual" aria-label="Learnova learning dashboard illustration">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="visual-glow"></div>
+            <div class="visual-card card-main">
+              <div class="visual-card-top"><span class="mini-label">YOUR LEARNING SPACE</span><span class="live-pill"><i></i> READY TO LEARN</span></div>
+              <div class="visual-greeting">Good things happen<br>when you <em>understand.</em></div>
+              <div class="visual-progress">
+                <div class="progress-head"><span>Weekly learning goal</span><strong>4 / 5 days</strong></div>
+                <div class="progress-track"><span style="width:80%"></span></div>
+              </div>
+              <div class="visual-bottom">
+                <div class="mini-stat"><b>12</b><span>Lessons explored</span></div>
+                <div class="mini-stat"><b>86%</b><span>Practice accuracy</span></div>
+                <div class="mini-stat"><b>5 days</b><span>Learning streak</span></div>
+              </div>
+            </div>
+            <div class="floating-note note-top"><span class="note-icon">✦</span><span><b>Nova AI</b><small>Your AI learning companion</small></span></div>
+            <div class="floating-note note-bottom"><span class="note-icon blue">✓</span><span><b>Small steps.</b><small>Real progress.</small></span></div>
+          </div>
+        </div>
+
+        <section class="section feature-section">
+          <div class="section-heading">
+            <div><div class="eyebrow">MADE FOR YOUR GROWTH</div><h2>Your learning universe.</h2></div>
+            <p>Everything you need to learn, practise and remember — thoughtfully brought together.</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card feature-blue" data-page="study" tabindex="0" role="button">
+              <div class="feature-icon">▤</div><span class="feature-arrow">↗</span><h3>Study Room</h3><p>Find your class, choose a subject and explore chapter-wise learning.</p><span class="feature-link">Explore study room</span>
+            </article>
+            <article class="feature-card" data-page="quiz" tabindex="0" role="button">
+              <div class="feature-icon lavender">✳</div><span class="feature-arrow">↗</span><h3>Quiz Arena</h3><p>Check your understanding with focused practice and quizzes.</p><span class="feature-link">Practice smarter</span>
+            </article>
+            <article class="feature-card" data-page="memory" tabindex="0" role="button">
+              <div class="feature-icon mint">▧</div><span class="feature-arrow">↗</span><h3>Memory Zone</h3><p>Keep useful notes, revisit flashcards and plan your revision.</p><span class="feature-link">Build recall</span>
+            </article>
+            <article class="feature-card" data-page="achievements" tabindex="0" role="button">
+              <div class="feature-icon peach">◇</div><span class="feature-arrow">↗</span><h3>Achievements</h3><p>Celebrate consistency, milestones and the progress you make.</p><span class="feature-link">See your growth</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="nova-banner">
+          <div class="nova-orb">N</div>
+          <div class="nova-banner-copy"><div class="eyebrow">MEET YOUR AI TEACHER</div><h2>Curiosity has a new companion.</h2><p>Meet Nova AI — designed to explain concepts clearly, patiently and step by step.</p></div>
+          <button class="button button-white" data-page="nova">Meet Nova AI <span>↗</span></button>
+        </section>
+        <section class="section medium-section">
+          <div class="section-heading"><div><div class="eyebrow">LEARNING THAT SPEAKS YOUR LANGUAGE</div><h2>Your pace. Your language.</h2></div><p>Choose Hindi or English for a learning experience that feels clear and comfortable.</p></div>
+          <div class="medium-grid">
+            <div class="medium-card"><span class="medium-symbol">अ</span><div><h3>Hindi medium</h3><p>सीखें, समझें और आगे बढ़ें — आसान हिंदी में।</p></div><span class="medium-check">✓</span></div>
+            <div class="medium-card"><span class="medium-symbol english">Aa</span><div><h3>English medium</h3><p>Understand concepts with clear, student-friendly English.</p></div><span class="medium-check">✓</span></div>
+          </div>
+        </section>
+      </section>
+
+      <section class="page" id="page-onboarding">
+        <div class="page-container narrow">
+          <div class="eyebrow">LET'S PERSONALISE YOUR SPACE</div><h1 class="page-title">Your learning journey<br><span>starts here.</span></h1>
+          <p class="page-lead">Choose your learning preferences. You can change them later.</p>
+          <div class="panel form-panel">
+            <label class="field-label" for="studentName">What should we call you?</label><input id="studentName" class="field" placeholder="Your first name" maxlength="40">
+            <div class="form-grid">
+              <div><label class="field-label" for="classSelect">Your class</label><select id="classSelect" class="field"><option value="">Select class</option><option>Class 1</option><option>Class 2</option><option>Class 3</option><option>Class 4</option><option>Class 5</option><option>Class 6</option><option>Class 7</option><option>Class 8</option><option>Class 9</option><option>Class 10</option><option>Class 11</option><option>Class 12</option><option>College</option><option>General learning</option></select></div>
+              <div><label class="field-label" for="mediumSelect">Learning language</label><select id="mediumSelect" class="field"><option value="English">English medium</option><option value="Hindi">Hindi medium</option></select></div>
+            </div>
+            <label class="field-label" for="boardSelect">Board / curriculum</label><select id="boardSelect" class="field"><option value="">Choose curriculum</option><option>CBSE</option><option>UP Board</option><option>ICSE</option><option>Other / Not sure</option></select>
+            <button class="button button-primary button-full" id="saveProfile">Create my learning space <span>↗</span></button>
+            <p class="form-footnote">Preview setup only. Secure account creation will be connected in a later stage.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="page-dashboard">
+        <div class="page-container">
+          <div class="dashboard-top"><div><div class="eyebrow">YOUR PERSONAL SPACE</div><h1 class="page-title">Welcome back, <span id="dashboardName">Learner</span>.</h1><p class="page-lead" id="dashboardMeta">Your learning journey continues here.</p></div><button class="button button-outline" data-page="profile">Edit profile</button></div>
+          <div class="stats-grid">
+            <div class="stat-card"><span class="stat-icon blue">✦</span><b>0 XP</b><small>Total experience</small></div>
+            <div class="stat-card"><span class="stat-icon amber">↗</span><b>0 days</b><small>Learning streak</small></div>
+            <div class="stat-card"><span class="stat-icon green">◎</span><b>0%</b><small>Practice accuracy</small></div>
+            <div class="stat-card"><span class="stat-icon purple">▤</span><b>0</b><small>Lessons completed</small></div>
+          </div>
+          <div class="dashboard-grid">
+            <div class="panel continue-panel"><div class="panel-heading"><div><div class="eyebrow">PICK UP WHERE YOU LEFT OFF</div><h2>Continue learning</h2></div><span class="panel-icon">→</span></div><div class="empty-state"><div class="empty-icon">▤</div><h3>Your next lesson is waiting.</h3><p>Choose your class and explore the available learning vaults.</p><button class="button button-primary" data-page="study">Open Study Room</button></div></div>
+            <div class="panel mission-panel"><div class="eyebrow">A GOOD PLACE TO START</div><h2>Today's mission</h2><div class="mission-icon">✦</div><h3>Explore one new concept</h3><p>Small, consistent learning steps can make a big difference.</p><button class="text-button" data-page="study">Choose a subject ↗</button></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="page-study">
+        <div class="page-container">
+          <div class="eyebrow">YOUR CURRICULUM, ORGANISED</div><h1 class="page-title">Welcome to the <span>Study Room.</span></h1><p class="page-lead">Choose your learning level and explore its subject vaults.</p>
+          <div class="panel selector-panel"><div class="form-grid"><div><label class="field-label" for="studyClass">Class / level</label><select class="field" id="studyClass"><option>Class 11</option><option>Class 1</option><option>Class 2</option><option>Class 3</option><option>Class 4</option><option>Class 5</option><option>Class 6</option><option>Class 7</option><option>Class 8</option><option>Class 9</option><option>Class 10</option><option>Class 12</option><option>College</option></select></div><div><label class="field-label" for="studyBoard">Curriculum</label><select class="field" id="studyBoard"><option>CBSE</option><option>UP Board</option><option>ICSE</option><option>Other</option></select></div><div><label class="field-label" for="studyMedium">Medium</label><select class="field" id="studyMedium"><option>English</option><option>Hindi</option></select></div></div></div>
+          <div class="vault-heading"><div><div class="eyebrow">SUBJECT VAULTS</div><h2 id="vaultTitle">Class 11 · CBSE</h2></div><span class="content-tag">Sample structure</span></div>
+          <div class="subject-grid" id="subjectGrid"></div>
+          <div class="notice"><span>ⓘ</span><p>Learnova is being built in stages. These are starter subject vaults, not a claim that every textbook chapter or lesson is already available. Reviewed curriculum content will be added class by class.</p></div>
+        </div>
+      </section>
+
+      <section class="page" id="page-classroom">
+        <div class="page-container narrow">
+          <button class="back-button" data-page="study">← Back to Study Room</button>
+          <div class="eyebrow">CHAPTER CLASSROOM · SAMPLE LESSON</div><h1 class="page-title">Morphology of <span>Flowering Plants.</span></h1><p class="page-lead">A sample classroom layout showing how chapter learning will be organised.</p>
+          <div class="lesson-layout">
+            <div class="panel lesson-main"><div class="lesson-label">CHAPTER INTRODUCTION</div><h2>Understand the structure of a flowering plant.</h2><p>In this chapter, learners explore the main parts of a flowering plant and how roots, stems, leaves, flowers, fruits and seeds are organised.</p><div class="lesson-callout"><b>Learning objective</b><p>By the end of this lesson, you should be able to identify the major plant organs and describe their basic functions.</p></div><h3>Lesson pathway</h3><ol class="lesson-list"><li><span>01</span> The root system <small>Lesson content to be reviewed</small></li><li><span>02</span> The shoot system <small>Lesson content to be reviewed</small></li><li><span>03</span> Flower, fruit and seed <small>Lesson content to be reviewed</small></li></ol></div>
+            <aside class="panel lesson-side"><div class="eyebrow">CHAPTER VAULT</div><b>Learning materials</b><p>Notes, diagrams, practice questions and chapter tests will appear here when reviewed content is added.</p><div class="locked-item">▤ Notes · Coming soon</div><div class="locked-item">◇ Practice · Coming soon</div><div class="locked-item">◎ Chapter test · Coming soon</div></aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="page-nova">
+        <div class="page-container narrow">
+          <div class="nova-page-head"><div class="nova-avatar">N</div><div><div class="eyebrow">YOUR AI LEARNING COMPANION</div><h1 class="page-title">Meet <span>Nova AI.</span></h1><p class="page-lead">A patient, step-by-step AI teacher for your learning journey.</p></div></div>
+          <div class="panel nova-chat-panel"><div class="chat-welcome"><div class="nova-avatar small">N</div><h2>Hi there. What are we learning today?</h2><p>Ask a question, share a difficult concept or choose a topic to explore.</p></div><div class="chat-suggestions"><button class="suggestion-chip">Explain a concept simply</button><button class="suggestion-chip">Give me an example</button><button class="suggestion-chip">Help me revise</button></div><form id="novaForm" class="chat-composer"><textarea id="novaInput" placeholder="Ask Nova a question..." rows="2"></textarea><button class="send-button" type="submit" aria-label="Send message">↑</button></form><p class="form-footnote">AI connection is not enabled in this starter build. Nova will become interactive after a secure AI backend is configured.</p></div>
+        </div>
+      </section>
+
+      <section class="page" id="page-quiz"><div class="page-container narrow"><div class="eyebrow">PRACTISE WITH PURPOSE</div><h1 class="page-title">Quiz <span>Arena.</span></h1><div class="panel placeholder-panel"><div class="placeholder-icon">✳</div><h2>Your practice space is taking shape.</h2><p>Reviewed question banks, timed quizzes, explanations and results will be added in a later stage.</p></div></div></section>
+      <section class="page" id="page-memory"><div class="page-container narrow"><div class="eyebrow">REMEMBER WHAT MATTERS</div><h1 class="page-title">Memory <span>Zone.</span></h1><div class="panel placeholder-panel"><div class="placeholder-icon">▧</div><h2>A calmer way to revise.</h2><p>Flashcards, saved notes, mistake review and revision schedules are planned for this space.</p></div></div></section>
+      <section class="page" id="page-achievements"><div class="page-container narrow"><div class="eyebrow">EVERY STEP COUNTS</div><h1 class="page-title">Your <span>Achievements.</span></h1><div class="panel placeholder-panel"><div class="placeholder-icon">◇</div><h2>Your milestones will live here.</h2><p>XP, levels, learning streaks and badges will be connected to real learning activity.</p></div></div></section>
+      <section class="page" id="page-progress"><div class="page-container narrow"><div class="eyebrow">SEE HOW FAR YOU'VE COME</div><h1 class="page-title">My <span>Progress.</span></h1><div class="panel placeholder-panel"><div class="placeholder-icon">↗</div><h2>Your learning analytics.</h2><p>Subject progress, chapter completion and weekly activity will appear when lesson tracking is connected.</p></div></div></section>
+      <section class="page" id="page-profile"><div class="page-container narrow"><div class="eyebrow">YOUR ACCOUNT</div><h1 class="page-title">Profile & <span>Settings.</span></h1><div class="panel placeholder-panel"><div class="placeholder-icon">◎</div><h2>Your learning preferences.</h2><p>Profile editing is available through onboarding in this preview. Secure accounts and cloud settings will be connected later.</p><button class="button button-primary" data-page="onboarding">Update learning preferences</button></div></div></section>
+      <section class="page" id="page-login"><div class="page-container narrow"><div class="eyebrow">WELCOME TO LEARNOVA</div><h1 class="page-title">Good to see <span>you again.</span></h1><div class="panel placeholder-panel"><div class="placeholder-icon">↗</div><h2>Account access is coming next.</h2><p>This starter version does not collect or store passwords. Secure sign-up, login and password reset will be implemented with authentication in a later stage.</p><button class="button button-primary" data-page="onboarding">Explore the preview</button></div></div></section>
+      <section class="page" id="page-about"><div class="page-container narrow"><div class="eyebrow">THE STUDENT UNIVERSE</div><h1 class="page-title">Built around <span>understanding.</span></h1><div class="panel placeholder-panel"><h2>One platform. Many learning journeys.</h2><p>Learnova is being designed for school students, college learners and curious minds — with Hindi and English learning experiences and an AI-first teaching approach.</p></div></div></section>
+    </main>
+
+    <footer class="footer"><a class="brand footer-brand" href="#" data-page="home"><span class="brand-mark">L</span><span>learnova<span class="brand-dot">.</span></span></a><span>The Student Universe</span><span>© 2026 Learnova · Early preview</span></footer>
+    <nav class="mobile-bottom" aria-label="Mobile navigation"><button data-page="home" class="mobile-nav-item active"><span>⌂</span>Home</button><button data-page="study" class="mobile-nav-item"><span>▤</span>Study</button><button data-page="nova" class="mobile-nav-item"><span>✦</span>Nova</button><button data-page="dashboard" class="mobile-nav-item"><span>◉</span>My space</button></nav>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+</body>
+                                                                                                       </html>
+            
